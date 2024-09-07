@@ -10,8 +10,11 @@ This project implements a SAT solver in Python, designed to parse and solve prop
 - **Linear-Time Algorithm**: The algorithm works in linear time by propagating truth values through the parse tree, unlike traditional exponential algorithms.
 - **DAG Construction**: After parsing, the common subformulas are shared in the parse tree, turning it into a Directed Acyclic Graph (DAG), optimizing the evaluation process.
 - **Transformation**: Logical formulas are translated into a form that simplifies the structure while maintaining semantic equivalence.
+![transformation](img/sat-transform.png)
 - **Heuristic Search**: When the linear algorithm fails, it applies a heuristic approach by guessing the values of unassigned variables based on the log2 of the number of atoms plus a constant.
+![forcing-laws](img/sat-forcing-laws.png)
 - **Evaluation and Visualization**: The project includes functions for evaluating logical expressions and visualizing the parse tree and DAG structure.
+![test](img/sat-test-6.png)
 
 ## How It Works
 ### Parsing
